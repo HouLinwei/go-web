@@ -1,0 +1,6 @@
+!*.go
+!*.tpl
+!*.conf
+!*.css
+!*.js
+!*.jpg
