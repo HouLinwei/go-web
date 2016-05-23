@@ -1,18 +1,18 @@
 package main
 
 import (
-    "github.com/astaxie/beego"
+	"github.com/astaxie/beego"
 )
 
-type IndexCtr struct{
-    beego.Controller
+type IndexCtr0 struct {
+	beego.Controller
 }
 
-func (this *IndexCtr) Get(){
-    this.Ctx.WriteString("Hello Wolrd!")
+func (this *IndexCtr0) Get() {
+	this.Ctx.WriteString("Hello Wolrd!")
 }
 
-func init(){
-    beego.Router("/", &IndexCtr{})
-    beego.Run()
+func init() {
+	beego.Router("/", &IndexCtr0{})
+	beego.Run()
 }

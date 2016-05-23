@@ -8,8 +8,8 @@ type IndexCtr struct {
 	beego.Controller
 }
 
-func (c *IndexCtr) Get() {
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "home.tpl"
+func (this *IndexCtr) Get() {
+	this.Data["Website"] = "beego.me"
+	this.Data["Email"] = "astaxie@gmail.com"
+	this.TplName = "home.tpl"
 }
