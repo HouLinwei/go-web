@@ -12,7 +12,7 @@ func (this *IndexCtr) Get(){
     this.Ctx.WriteString("Hello Wolrd!")
 }
 
-func main(){
+func init(){
     beego.Router("/", &IndexCtr{})
     beego.Run()
 }
